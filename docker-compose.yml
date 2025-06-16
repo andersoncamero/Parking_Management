@@ -5,9 +5,9 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongo_data:/data/db
+      - ./mongo_data:/data/db
     networks:
-      - app-networks
+      - app-network
 
   backend:
     build:
@@ -15,33 +15,26 @@ services:
       dockerfile: Dockerfile
     container_name: backend
     ports:
-      - "${PORT}:3000"
+      - "${PORT}:8081"
     depends_on:
-      - mongo
+      - mongodb
     env_file:
       - .env
+    networks:
+      - app-network
 
-  frontend-builder:
+  frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: frontend-builder
+    container_name: frontend
     networks:
-      - app-networks
-
-  nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
+      - app-network
     ports:
       - "5173:80"
     depends_on:
-      - frontend-builder
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./frontend/dist:/usr/share/nginx/html:ro
-    networks:
-      - app-networks
+      - backend
+
 
 networks:
   app-network:

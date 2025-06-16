@@ -19,4 +19,4 @@ COPY --from=builder /app/dist ./dist
 
 CMD [ "node", "dist/main" ]
 
-EXPOSE 3000
+EXPOSE 8081
