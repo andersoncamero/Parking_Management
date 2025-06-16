@@ -1,0 +1,42 @@
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded
+}
+
+.card-primary {
+    @apply bg-white shadow-md rounded-lg p-4
+}
+
+.label-primary {
+@apply block text-sm font-medium text-gray-700 mb-1
+}
+
+.input-primary {
+    @apply border border-gray-300 rounded px-3 py-2 w-full
+}
+
+.h1-primary {
+    @apply mb-6 text-3xl font-bold text-center
+}
+
+.h2-primary {
+    @apply text-lg font-semibold text-gray-700 line-clamp-2
+}
+
+.h3-primary{
+ @apply text-lg font-semibold
+}
+
+
+.login-div-primary {
+    @apply flex min-h-screen items-center justify-center bg-gray-100
+}
+.login-div-secondary {
+    @apply w-full max-w-md rounded-lg bg-white p-6 shadow-md
+}
+
+.stats-cars-primary{
+     @apply flex flex-wrap gap-6 w-full mb-6;
+}
+.stats-cars-secondary{
+    @apply flex-1 basis-[20%] min-w-[100px] rounded-xl shadow-md p-6
+}
