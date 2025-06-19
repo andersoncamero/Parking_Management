@@ -10,16 +10,16 @@ import type { RegistroVehiculo } from "./types";
 
 
 const registros: RegistroVehiculo[] = [
-  { placa: "ABC123", hora: "08:15", ubicacion: "Zona A - Piso 1" },
-  { placa: "XYZ987", hora: "08:45", ubicacion: "Zona B - Piso 2" },
-  { placa: "JKL456", hora: "09:10", ubicacion: "Zona C - Piso 3" },
-  { placa: "MNO321", hora: "09:30", ubicacion: "Zona A - Piso 1" },
-  { placa: "TUV654", hora: "10:05", ubicacion: "Zona B - Piso 2" },
-  { placa: "DEF789", hora: "10:45", ubicacion: "Zona C - Piso 3" },
-  { placa: "GHI147", hora: "11:15", ubicacion: "Zona A - Piso 1" },
-  { placa: "LMN258", hora: "11:45", ubicacion: "Zona B - Piso 2" },
-  { placa: "QRS369", hora: "12:30", ubicacion: "Zona C - Piso 3" },
-  { placa: "UVW753", hora: "13:00", ubicacion: "Zona A - Piso 1" },
+  { placa: "ABC123", tipo:"carro"  ,hora: "08:15", ubicacion: "Zona A - Piso 1" },
+  { placa: "XYZ987", tipo:"carro", hora: "08:45", ubicacion: "Zona B - Piso 2" },
+  { placa: "JKL456", tipo:"moto", hora: "09:10", ubicacion: "Zona C - Piso 3" },
+  { placa: "MNO321", tipo:"camioneta",hora: "09:30", ubicacion: "Zona A - Piso 1" },
+  { placa: "TUV654", tipo:"furgon", hora: "10:05", ubicacion: "Zona B - Piso 2" },
+  { placa: "DEF789", tipo:"furgon",hora: "10:45", ubicacion: "Zona C - Piso 3" },
+  { placa: "GHI147", tipo:"carro", hora: "11:15", ubicacion: "Zona A - Piso 1" },
+  { placa: "LMN258", tipo:"carro", hora: "11:45", ubicacion: "Zona B - Piso 2" },
+  { placa: "QRS369", tipo:"moto", hora: "12:30", ubicacion: "Zona C - Piso 3" },
+  { placa: "UVW753", tipo:"carro", hora: "13:00", ubicacion: "Zona A - Piso 1" },
 ];
 
 export const MainLayout: React.FC = () => {
