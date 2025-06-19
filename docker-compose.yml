@@ -15,11 +15,11 @@ services:
       dockerfile: Dockerfile
     container_name: backend
     ports:
-      - "${PORT}:8081"
+      - "8081:8081"
     depends_on:
       - mongodb
     env_file:
-      - .env
+      - .env.development
     networks:
       - app-network
 
