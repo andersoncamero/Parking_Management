@@ -20,15 +20,15 @@ export const Sidebar: React.FC<SidebarProsp> = ({ isOpen, onClose }) => {
 
   return (
     <aside
-      className={`bg-blue-100 text-blue-900 fixed sm:static top-0 left-0 min-h-screen w-70 z-50 transform transition-transform duration-300 ${
+      className={`bg-gray-50 text-blue-900 fixed sm:static top-0 left-0 min-h-screen w-70 z-50 transform transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } sm:translate-x-0 shadow-md border-r border-blue-200 flex flex-col`}
+      } sm:translate-x-0 shadow-md border-r border-gray-200 flex flex-col`}
     >
       <div className="px-4 pt-4">
         <h1 className="h1-primary">🅿️ ParkingApp</h1>
       </div>
 
-      <nav className="flex-1 mt-4 overflow-y-auto">
+      <nav className="flex-1 mt-4 overflow-y-auto overflow-x-hidden">
         {navItems.map(({ href, icon: Icon, label }) => {
           const isActive = location.pathname === href;
           return (
@@ -43,8 +43,8 @@ export const Sidebar: React.FC<SidebarProsp> = ({ isOpen, onClose }) => {
                 onClick={onClose}
                 className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-all font-medium text-xl ${
                   isActive
-                    ? "bg-blue-300/60 text-blue-900"
-                    : "text-blue-800 hover:bg-blue-200"
+                    ? "bg-blue-100/60 text-blue-700"
+                    : "text-shadow-blue-800 hover:bg-gray-200"
                 }`}
               >
                 <Icon size={20} />

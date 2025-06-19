@@ -17,7 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`btn-primary ${className}`}
+      className={`${className}`}
     >
         {children}
     </button>

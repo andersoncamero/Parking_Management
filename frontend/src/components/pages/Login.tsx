@@ -29,7 +29,7 @@ export const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button
-            className="mt-4 w-full"
+            className="btn-primary mt-4 w-full"
             onClick={() => handleLogin(email, password)}
             type="button"
           >
