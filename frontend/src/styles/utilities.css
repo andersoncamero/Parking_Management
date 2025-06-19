@@ -1,5 +1,5 @@
 .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded
+    @apply bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-xl w-md
 }
 
 .card-primary {
@@ -11,11 +11,11 @@
 }
 
 .input-primary {
-    @apply border border-gray-300 rounded px-3 py-2 w-full
+    @apply border border-gray-200 rounded-xl px-3 py-2 w-md
 }
 
 .h1-primary {
-    @apply mb-6 text-3xl font-bold text-center
+    @apply mb-6 text-3xl font-bold text-center font-sans
 }
 
 .h2-primary {
@@ -26,12 +26,15 @@
  @apply text-lg font-semibold
 }
 
+.btn-recientes{
+    @apply rounded-full bg-blue-600 text-white py-1 px-4
+}
 
 .login-div-primary {
-    @apply flex min-h-screen items-center justify-center bg-gray-100
+    @apply grid grid-cols-2 min-h-screen items-center justify-center bg-white  
 }
 .login-div-secondary {
-    @apply w-full max-w-md rounded-lg bg-white p-6 shadow-md
+    @apply h-full w-full place-content-center rounded-xl bg-white p-6 
 }
 
 .stats-cars-primary{
@@ -39,4 +42,16 @@
 }
 .stats-cars-secondary{
     @apply flex-1 basis-[20%] min-w-[100px] rounded-xl shadow-md p-6
+}
+
+.login-icon{
+    @apply flex place-content-center mb-1
+}
+
+.image-containt{
+    @apply grid w-[95%] h-[92%] justify-self-center place-content-center  justify-center
+}
+
+.image-parking{ 
+    @apply flex  h-full  object-contain rounded-xl drop-shadow-2xl box-border
 }
